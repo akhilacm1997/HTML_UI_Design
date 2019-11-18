@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>cycle_grid</title>
+      <style>
+        body{
+                background-color:#413f3b ;
+        }
+        .wrapper {
+                  display: grid;
+
+                  grid-gap: 1em;
+                  grid-auto-rows: minmax(70px, auto);
+                  justify-items: stretch;
+                  align-items: stretch;
+
+          }
+          .wrapper>.box1 {
+             display:grid;
+             background-image: url(bg-header.jpg);
+             grid-template-columns: repeat(5, 1fr);
+             padding: .2em;
+
+         }
+         .box1>.box11
+         {
+           grid-column:1;
+           align:center;
+         }
+         .box1>.box12
+         {
+           grid-column:4;
+           align-self:center;
+         }
+         .box12 a
+         {
+           text-decoration:none;
+           color:red;
+
+         }
+  ​
+      </style>
+    </head>
+    <body>
+      <div class="wrapper">
+          <div class="box1">
+              <div class="box11">
+                  <img src="pedelfaster.png">
+              </div>
+              <div class="box12">
+                  <a href="#">home/</a>
+                  <a href="#">news/</a>
+                  <a href="#">achieve/</a>
+                  <a href="#">about/</a>
+                  <a href="#">contact</a>
+            </div>
+
+          </div>
+          <div class="box2">
+            <div class="box11">
+                <img src="pedelfaster.png">
+            </div>
+
+          </div>
+  ​
+      </div>
+      </div>
+    </body>
+  </html>
